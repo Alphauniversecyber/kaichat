@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with KAI</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="chat-container">
+        <div id="header">
+            <img src="images/logo.png" alt="KAI Logo" id="logo">
+        </div>
+        <div id="messages"></div>
+        <form id="message-form" onsubmit="return sendMessage(event)">
+            <input type="text" id="userMessage" placeholder="Type your message..." required />
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
